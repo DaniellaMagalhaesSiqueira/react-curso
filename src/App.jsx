@@ -7,6 +7,11 @@ import Card from './components/layout/Card'
 import Familia from './components/basicos/Familia'
 import FamiliaMembro from './components/basicos/FamiliaMembro'
 import ListaAlunos from './components/repeticao/ListaAlunos'
+import TabelaProdutos from './components/repeticao/TabelaProdutos'
+import ParOuImpar from './components/condicional/ParOuImpar'
+import UsuarioInfo from './components/condicional/UsuarioInfo'
+import DiretaPai from './components/comunicacao/DiretaPai'
+import IndiretaPai from './components/comunicacao/IndiretaPai'
 import "./App.css"
 
 
@@ -29,10 +34,31 @@ import "./App.css"
 //     </div>
 //     )
 // }
+
 export default _ =>
     <div className="App">
         <h1>Fundamentos React</h1>
         <div className="Cards">
+
+            <Card titulo="#10 - Comunicação Indireta" color="#8bad39">
+                <IndiretaPai></IndiretaPai>
+            </Card>
+
+            <Card titulo="#09 - Comunicação Direta" color="#59323c">
+                <DiretaPai></DiretaPai>
+            </Card>
+
+            <Card titulo="#08 - Renderização Condicional" color="#982365">
+                <ParOuImpar numero={21}></ParOuImpar>
+                <UsuarioInfo usuario={{ nome: 'Fernanda'}}/>
+                {/* <UsuarioInfo usuario={{ email: 'fer@nanda.com'}}/>
+                <UsuarioInfo usuario={{ }}/> */}
+                <UsuarioInfo/>
+            </Card>
+
+            <Card titulo="#07 - Repetção Desafio" color="#3a9ad9">
+                <TabelaProdutos></TabelaProdutos>
+            </Card>
 
             <Card titulo="#06 - Repetção" color="#FF4C65">
                 <ListaAlunos></ListaAlunos>
