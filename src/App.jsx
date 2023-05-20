@@ -14,6 +14,8 @@ import DiretaPai from './components/comunicacao/DiretaPai'
 import IndiretaPai from './components/comunicacao/IndiretaPai'
 import Input from './components/formulario/Input'
 import Contador from './components/contador/Contador'
+import Mega from './components/mega/Mega'
+import MegaProf from './components/mega/MegaProfessor'
 import "./App.css"
 
 
@@ -41,6 +43,14 @@ export default _ =>
     <div className="App">
         <h1>Fundamentos React</h1>
         <div className="Cards">
+
+            <Card titulo="#13 - Mega Professor" color="#b9006e">
+                <MegaProf qtde={6}></MegaProf>
+            </Card>
+
+            <Card titulo="#13 - Desafio Megasena" color="#bf42f5">
+                <Mega ></Mega>
+            </Card>
 
             <Card titulo="#12 - Contador" color="#424242">
                 <Contador numeroInicial={10}></Contador>

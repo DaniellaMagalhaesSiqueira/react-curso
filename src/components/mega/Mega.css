@@ -1,0 +1,27 @@
+
+.Mega {
+    display: flexbox;
+    justify-content: center;
+}
+
+.Mega input{
+    width: 60px;
+    font-size: 1.4rem;
+    border-radius: 4px;
+    background-color: #c3c1c1;
+}
+
+.Mega label {
+    font-size: 1.4rem;
+    margin-right: 10px;
+}
+
+.Mega button{
+    border-radius: 4px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    background-color: #1e5c83;
+    color: white;
+    min-width: 200px;
+    margin: 10px;
+}
